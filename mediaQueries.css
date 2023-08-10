@@ -1,0 +1,154 @@
+
+@media (max-width: 1080px) {
+    * {
+        margin: 0!important;
+    }
+    body {
+        height: 100vh;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .all {
+        width: 100%;
+        height: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .main__container {
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 100%;
+        background-size: auto 100%;
+    }
+    .main__container::before {
+        width: 105%;
+        height: 105%;
+        background-size: auto 100%;
+    }
+
+    .top {
+        flex-direction: column;
+        width: 100%;
+        height: 50%;
+    }
+
+    .middle {
+        order: 1;
+        width: 100%;
+        height: 35%;
+        justify-content: flex-start;
+    }
+    .title {
+        margin-top: 1rem!important;
+        margin-bottom: 1rem!important;
+        font-size: 2rem;
+    }
+    .middle .input__container {
+        align-items: center;
+        height: 35%;
+    }
+    .middle .input__container input {
+        height: 70%;
+        margin-left: 3.5rem!important;
+        font-size: 1rem;
+    }
+    .middle .input__container button {
+        width: 10%;
+        height: 100%;
+        margin-left: 1rem!important;
+    }
+    .middle .input__container button svg {
+        width: 28px;
+    }
+
+    .middle .city__text {
+        height: 100%;
+        width: 100%;
+    }
+    .weather__In {
+        width: 60%;
+        height: 90% !important;
+    }
+    .loading__container {
+        background: cornflowerblue;
+        height: 0;
+    }
+    .spinner {
+        width: 100%;
+        margin-top: 2rem!important;
+    }
+
+
+
+    .left__side {
+        order: 2;
+        width: 100%;
+        height: 30%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .left__side > div {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 33.33%;
+    }
+    .status__ico svg{
+        height: 70%;
+    }
+    .status__txt {
+        font-size: 2rem;
+    }
+
+
+
+    .right__side {
+        flex-wrap: wrap;
+        order: 3;
+        flex-direction: row;
+        width: 100%;
+        height: 35%;
+    }
+    .right__side > div {
+        width: 50%;
+        justify-content: center;
+        height: 50%;
+    }
+    .right__side > div .right__container {
+        width: 50% !important;
+    }
+
+
+
+    .bottom {
+        height: 50% !important;
+        margin-top: 3rem!important;
+    }
+
+    .bottom .message {
+        margin-left: 1rem!important;
+        width: 90%;
+        height: 20%;
+    }
+    .bottom .forecast__days button {
+        width: calc(100%/3.5);
+        height: 45%;
+        /*margin-top: 2rem!important;*/
+    }
+    .date {
+        font-size: 0.6rem;
+    }
+    .day__temp {
+        font-size: 1.3rem;
+    }
+
+    .forecast__days {
+        height: 80%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+}
